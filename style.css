@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/src/fonts/Inter-Regular.woff2') format('woff2'),
+        url('/src/fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    height: 100%;
+}
+
+/* container */
+.container {
+    font-family: 'Inter';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    color: #FFF;
+    background: #6943FF;
+
+}
+button#convert-btn {
+
+}
+input::placeholder {
+  text-align: center;
+  color: #FFF;
+}
+input#unit-input {
+    color: #FFF;
+    background-color: #6943FF;
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+    
+    width: 7.3125rem;
+    height: 5.1875rem;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 3.625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.52456rem; /* 42.057% */
+}
+
+button#convert-btn {
+    padding: 0.56rem 1.72rem;
+
+}
