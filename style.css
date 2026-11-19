@@ -8,12 +8,16 @@
 }
 
 :root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
 }
 
 /* container */
 .container {
     font-family: 'Inter';
+    width: fit-content;
 
     display: flex;
     flex-direction: column;
@@ -30,10 +34,9 @@
     color: #FFF;
     background: #6943FF;
 
+    padding: 2rem 3rem;
 }
-button#convert-btn {
 
-}
 input::placeholder {
   text-align: center;
   color: #FFF;
@@ -58,5 +61,51 @@ input#unit-input {
 
 button#convert-btn {
     padding: 0.56rem 1.72rem;
+    background-color: #FFF;
 
+    border: 1px solid #FFF;
+    border-radius: 0.3125rem;
+    background: #FFF;
+
+    /* shadow/sm */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+    color: #3D3D3D;
+
+    /* text-base/leading-6/font-medium */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+
+}
+
+.measurements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    width: 100%;
+    background-color: #F4F4F4;
+}
+.title {
+    color: #5A537B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem; /* 100% */
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 4rem;
+    border-radius: 0.29256rem;
+    background: var(--white, #FFF);
+    width: 70%;
 }
